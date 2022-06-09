@@ -15,7 +15,7 @@
 	position: relative;
 	z-index: cover-title-z-index;
 	letter-spacing: .4rem;
-	line-height: 2;
+	line-height: 2.2;
 }
 .bigTitle {
 	font-family: Gilroy, sans-serif;
@@ -28,7 +28,7 @@
 .btn {
 	composes: btn from "./../../index.css";
 	position: absolute;
-	bottom: 2rem;
+	bottom: 3rem;
 	right: 21rem;
 }
 .btn::before {
