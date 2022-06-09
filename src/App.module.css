@@ -1,0 +1,7 @@
+.app {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}

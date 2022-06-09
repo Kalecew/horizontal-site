@@ -1,0 +1,13 @@
+@value bg-black: #171717;
+
+@value text-black: #171717;
+@value text-dark: #272727;
+
+@value border-dark: #272727;
+
+@value btn-bg: #ff6a9f;
+@value btn-text: #171717;
+
+@value cover-title-z-index: 1;
+@value cover-sperm-z-index: 2;
+@value cover-ovule2-z-index: 3;

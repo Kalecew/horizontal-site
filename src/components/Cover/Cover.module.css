@@ -1,0 +1,118 @@
+@import './../../fonts/Gilroy/style.css';
+
+@value colors: './../../var.css';
+@value text-black, text-dark from colors;
+
+@value z-index: './../../var.css';
+@value cover-title-z-index, cover-sperm-z-index, cover-ovule2-z-index from z-index;
+
+.cover {
+	padding: 30rem 0 0 14rem;
+	background: url('./bg.jpg') center no-repeat;
+	background-size: cover;
+}
+.title {
+	position: relative;
+	z-index: cover-title-z-index;
+	letter-spacing: .4rem;
+	line-height: 2;
+}
+.bigTitle {
+	font-family: Gilroy, sans-serif;
+	font-size: 21.8rem;
+	line-height: 23.4rem;
+	font-weight: 300;
+	letter-spacing: 1.2rem;
+	color: text-black;
+}
+.btn {
+	composes: btn from "./../../index.css";
+	position: absolute;
+	bottom: 2rem;
+	right: 21rem;
+}
+.btn::before {
+	content: url('./arrow.png');
+}
+.pinkSperm {
+	width: 118.3rem;
+	height: 18.5rem;
+	position: absolute;
+	z-index: cover-sperm-z-index;
+	top: 30rem;
+    left: 87rem;
+	background: url('./pink_sperm.png') center no-repeat;
+	background-size: cover;
+}
+.ovule1 {
+	width: 12.5rem;
+	height: 11.4rem;
+	position: absolute;
+	top: 12rem;
+    left: 150rem;
+	background: url('./ovule_1.png') center no-repeat;
+	background-size: cover;
+	animation: ovule1 10s infinite ease;
+}
+.ovule2 {
+	width: 22.1rem;
+	height: 22.7rem;
+	position: absolute;
+	z-index: cover-ovule2-z-index;
+	top: 40rem;
+    left: 173rem;
+	background: url('./ovule_2.png') center no-repeat;
+	background-size: cover;
+	animation: ovule2 20s infinite linear;
+}
+.ovule3 {
+	width: 14.6rem;
+	height: 14.2rem;
+	position: absolute;
+	top: 100rem;
+    left: 6rem;
+	background: url('./ovule_3.png') center no-repeat;
+	background-size: cover;
+	animation: ovule3 10s infinite linear;
+}
+.ovule4 {
+	width: 45.5rem;
+	height: 25.3rem;
+	position: absolute;
+	bottom: 0;
+    left: 109rem;
+	background: url('./ovule_4.png') center no-repeat;
+	background-size: cover;
+	animation: ovule4 10s infinite linear;
+}
+
+@keyframes ovule1 {
+	from 	{transform: translate(0rem,0rem) scale(1) ;}
+	50% 	{transform: translate(5rem,2rem) scale(.9);}
+	to 		{transform: translate(0rem,0rem) scale(1) ;}
+}
+@keyframes ovule2 {
+	from 	{transform: translate(0rem,0rem)		rotate(0deg)  ;}
+	10% 	{transform: translate(-10rem,-3rem)		rotate(36deg) ;}
+	20% 	{transform: translate(-15rem,-5rem)		rotate(72deg) ;}
+	30% 	{transform: translate(-20rem,-8rem)		rotate(108deg);}
+	40% 	{transform: translate(-23rem,-13rem)	rotate(144deg);}
+	50% 	{transform: translate(-25rem,-20rem)	rotate(180deg);}
+	60% 	{transform: translate(-20rem,-25rem)	rotate(216deg);}
+	70% 	{transform: translate(-10rem,-20rem)	rotate(252deg);}
+	80% 	{transform: translate(-5rem,-15rem)		rotate(288deg);}
+	90% 	{transform: translate(-3rem,-8rem)		rotate(324deg);}
+	to 		{transform: translate(0rem,0rem)		rotate(360deg);}
+}
+@keyframes ovule3 {
+	from 	{transform: translate(0rem,0rem) ;}
+	50% 	{transform: translate(5rem,10rem);}
+	to 		{transform: translate(0rem,0rem) ;}
+}
+@keyframes ovule4 {
+	from 	{transform: translate(0rem,0rem) 	scale(1)  ;}
+	25% 	{transform: translate(-5rem,5rem) 	scale(1.1);}
+	50% 	{transform: translate(-10rem,0rem) 	scale(1)  ;}
+	75% 	{transform: translate(-5rem,5rem) 	scale(1.1);}
+	to 		{transform: translate(0rem,0rem) 	scale(1)  ;}
+}
