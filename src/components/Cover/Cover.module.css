@@ -8,13 +8,10 @@
 
 .cover {
 	padding: 30rem 0 0 14rem;
-	background: url('./bg.jpg') center no-repeat;
-	background-size: cover;
 }
 .title {
 	position: relative;
 	z-index: cover-title-z-index;
-	letter-spacing: .4rem;
 	line-height: 2.2;
 }
 .bigTitle {

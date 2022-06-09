@@ -9,9 +9,11 @@ function App() {
   return (
     <div className={s.app}>
       <Header/>
-      <Cover/>
-      <Description />
-      <Advantages />
+      <div className={s.content}>
+        <Cover/>
+        <Description />
+        <Advantages />
+      </div>      
       <Footer /> 
     </div>
   )

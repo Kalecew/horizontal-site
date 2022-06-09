@@ -1,7 +1,7 @@
 @import './fonts/DINPro/style.css';
 
 @value colors:  './var.css';
-@value text-dark, btn-bg, btn-text, bg-black from colors;
+@value text-dark, btn-bg, btn-text, bg-black, bg-white from colors;
 
 html {
   font-size: 10px;
@@ -31,6 +31,7 @@ h2 {
   font-weight: 400;
   text-transform: uppercase;
   color: text-dark;
+  letter-spacing: .4rem;
 }
 
 a {
@@ -38,6 +39,7 @@ a {
 }
 button {
   font: inherit;
+  border:  none;
 }
 ul {
   list-style: none;
@@ -80,4 +82,10 @@ ul {
 .btn__text {
   margin: 0 .6em;
   letter-spacing: .2rem;
+}
+
+.block {
+  border-radius: 8rem;
+  background-color: bg-white;
+  box-shadow: 1rem 1rem 10rem 1rem rgba(157,185,198,.4);
 }

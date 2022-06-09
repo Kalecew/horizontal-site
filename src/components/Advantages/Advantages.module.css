@@ -1,0 +1,161 @@
+@import './../../fonts/Gilroy/style.css';
+@value colors:  './../../var.css';
+@value bg-white from colors;
+@value z-index:  './../../var.css';
+@value advantages-bottle-z-index,	 advantages-bubble1-z-index,	 advantages-bubble2-z-index,	 advantages-bubble3-z-index,	 advantages-bubble4-z-index,	 advantages-bubble5-z-index,	 advantages-bubble6-z-index,	 advantages-bubble7-z-index,	 advantages-bubble8-z-index from z-index;
+
+.advantages {
+	padding: 32rem 0 0 70.6rem;
+	position: relative;
+}
+.title {
+
+}
+.bigTitle {
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 400;
+	font-size: 19rem;
+	margin-left: -1rem;
+	letter-spacing: 2.3rem;
+}
+.gridContent {
+	margin: 13rem 0 0 -8.5rem;
+	display: grid;
+	grid-template-areas: "long short" 
+						 "long btn";
+	grid-gap: 7rem;
+	width: fit-content;
+}
+.longAdvantage, .shortAdvantage {
+	composes: block from './../../index.css';
+	font-size: 5rem;
+	padding: 9.5rem 9.5rem 7rem;
+}
+.longAdvantage p, .shortAdvantage p {
+	overflow: hidden;
+  height: 100%;
+}
+.longAdvantage::before, .shortAdvantage::before {
+	position: absolute;
+	top: 0;
+	left:  8.5rem;
+	transform: translateY(-50%);
+}
+.longAdvantage {
+	grid-area: long;
+	width: 67rem;
+	height: 53rem;
+	position: relative;
+}
+.longAdvantage::before {
+	content: url('./icon_1.png');
+}
+.longAdvantage::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -8.5rem;
+	width: 17rem;
+	height: 100%;
+	background-color: bg-white;
+}
+.shortAdvantage {
+	grid-area: short;
+	width: 53rem;
+	height: 30rem;
+	position: relative;
+}
+.shortAdvantage::before {
+	content: url('./icon_2.png');
+}
+.btn {
+	composes: btn from './../../index.css';
+	grid-area: btn;
+	width: fit-content;
+	height: fit-content;
+}
+.btn::before {
+	content: url('./plus.png');
+}
+.bottle {
+	width: 46.6rem;
+	height: 137.7rem;
+	background: url('./bottle.png') center no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 11rem;
+	z-index: advantages-bottle-z-index;
+}
+.bubble1 {
+	width: 7.4rem;
+	height: 7.6rem;
+	background: url('./bubble_1.png') center no-repeat;
+	position: absolute;
+	top: 13rem;
+  left: 40rem;
+  z-index: advantages-bubble1-z-index;
+}
+.bubble2 {
+	width: 13.6rem;
+	height: 13.8rem;
+	background: url('./bubble_2.png') center no-repeat;
+	position: absolute;
+	top: 31rem;
+  left: 38rem;
+  z-index: advantages-bubble2-z-index;
+}
+.bubble3 {
+	width: 6.8rem;
+	height: 6.8rem;
+	background: url('./bubble_3.png') center no-repeat;
+	position: absolute;
+	top: 42rem;
+  left: 16rem;
+  z-index: advantages-bubble3-z-index;
+}
+.bubble4 {
+	width: 22.5rem;
+	height: 22.4rem;
+	background: url('./bubble_4.png') center no-repeat;
+	position: absolute;
+	top: 63rem;
+  left: 38rem;
+  z-index: advantages-bubble4-z-index;
+}
+.bubble5 {
+	width: 6.6rem;
+	height: 6.6rem;
+	background: url('./bubble_5.png') center no-repeat;
+	position: absolute;
+	top: 91rem;
+  left: 3rem;
+  z-index: advantages-bubble5-z-index;
+}
+.bubble6 {
+	width: 14.9rem;
+	height: 14.9rem;
+	background: url('./bubble_6.png') center no-repeat;
+	position: absolute;
+	top: 111rem;
+  left: 6rem;
+  z-index: advantages-bubble6-z-index;
+}
+.bubble7 {
+	width: 12.3rem;
+	height: 12.3rem;
+	background: url('./bubble_7.png') center no-repeat;
+	position: absolute;
+	top: 118rem;
+  left: 49rem;
+  z-index: advantages-bubble7-z-index;
+}
+.bubble8 {
+	width: 28.3rem;
+	height: 13rem;
+	background: url('./bubble_8.png') center no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 38rem;
+	z-index: advantages-bubble8-z-index;
+}

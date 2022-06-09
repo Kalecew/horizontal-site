@@ -1,0 +1,68 @@
+.description {
+	padding: 26rem 0 0 14rem;
+	position: relative;
+}
+.title {
+	margin-bottom: 9rem;
+}
+.sperm1 {
+	width: 204.8rem;
+	height: 98.8rem;
+	background: url('./sperm_1.png') center no-repeat;
+	position: absolute;
+	top: 20rem;
+	left: 74rem;
+}
+[data-animation] .sperm1 {
+	animation: sperm 2s 1 ease-in-out;
+}
+.sperm2 {
+	width: 146.1rem;
+	height: 68.5rem;
+	background: url('./sperm_2.png') center no-repeat;
+	position: absolute;
+	top: 20rem;
+	left: 118rem;
+}
+[data-animation] .sperm2 {
+	animation: sperm 2s 1 ease-in-out;
+}
+.sperm3 {
+	width: 82.8rem;
+	height: 39.1rem;
+	background: url('./sperm_3.png') center no-repeat;
+	position: absolute;
+	top: 15rem;
+    left: 143rem;
+}
+[data-animation] .sperm3 {
+	animation: sperm 3s 1 ease-in-out;
+}
+.sperm4 {
+	width: 65.1rem;
+	height: 31.5rem;
+	background: url('./sperm_4.png') center no-repeat;
+	position: absolute;
+	top: 103rem;
+    left: 178rem;
+}
+[data-animation] .sperm4 {
+	animation: sperm 4s 1 ease-in-out;
+}
+.sperm5 {
+	width: 145.9rem;
+	height: 68.3rem;
+	background: url('./sperm_5.png') center no-repeat;
+	position: absolute;
+	top: 83rem;
+    left: 178rem;
+}
+[data-animation] .sperm5 {
+	animation: sperm 3s 1 ease-in-out;
+}
+
+
+@keyframes sperm{
+	from {opacity: 0;}
+	to 	 {opacity: 1;}
+}

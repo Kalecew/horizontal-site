@@ -1,5 +1,9 @@
+@values z-index:  './../../var.css';
+@values footer-z-index from z-index;
+
 .footer {
 	position: fixed;
 	left: 14rem;
 	bottom: 2.5rem;
+	z-index: footer-z-index;
 }

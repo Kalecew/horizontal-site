@@ -2,6 +2,8 @@
 
 @value colors: './../../var.css';
 @value text-dark, border-dark from colors;
+@value z-index: './../../var.css';
+@value header-z-index from z-index;
 
 .header {
 	position: fixed;
@@ -9,6 +11,7 @@
 	top: 5rem;
 	display: flex;
 	align-items: center;
+	z-index: header-z-index;
 }
 .nav {
 	font-size: 0;

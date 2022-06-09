@@ -1,13 +1,16 @@
+import s from './Advantages.module.css'
+import PopupAdvantages from './PopupAdvantages/PopupAdvantages'
+
 const Advantages = () => (
-  <section className="advantages" id="advan">
-    <h2 className="advantages__title h2">
+  <section className={s.advantages} id="advan">
+    <h2 className={s.title}>
       Ключевое сообщение
-      <span className="advantages__big-title">
+      <div className={s.bigTitle}>
         Brend<b>XY</b>
-      </span>
+      </div>
     </h2>
-    <div className="advantages__content">
-      <div className="advantages__long">
+    <div className={s.gridContent}>
+      <div className={s.longAdvantage}>
         <p>
           Ehicula ipsum a arcu 
           cursus vitae. Eu non 
@@ -16,52 +19,24 @@ const Advantages = () => (
           risus ultricies
         </p>
       </div>
-      <div className="advantages__short">
+      <div className={s.shortAdvantage}>
         <p>
-          A arcu 
+          A arcu <br/>
           cursus vitae
         </p>
       </div>
-      <button className="advantages__btn btn" type="button">Подробнее</button>
+      <button className={s.btn} type="button"><span className="btn__text">Подробнее</span></button>
     </div>
-    <div className="advantages__popup block">
-      <h3 className="advantages__title h2">
-        Преимущества
-        <span className="advantages__big-title">
-          Brend<b>XY</b>
-        </span>
-      </h3>
-      <div className="advantages__directory directory-advantages">
-        <ol className="directory-advantages__list">
-          <li className="directory-advantages__item">
-            Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit
-          </li>
-          <li className="directory-advantages__item">
-            Faucibus pulvinar elementum integer enim
-          </li>
-          <li className="directory-advantages__item">
-            Faucibus pulvinar elementum integer enim
-          </li>
-        </ol>
-        <div className="directory-advantages__pagination pagination">
-          <ul className="pagination__list">
-            <li className="pagination__item">
-              <button className="pagination__link">&lt;</button>
-            </li>
-            <li className="pagination__item">
-              <button className="pagination__link pagination__link--active">1</button>
-            </li>
-            <li className="pagination__item">
-              <button className="pagination__link">2</button>
-            </li>
-            <li className="pagination__item">
-              <button className="pagination__link">&gt;</button>
-            </li>
-          </ul>
-        </div>
-      </div>       
-    </div>
+    <div className={s.bottle}></div>
+    <div className={s.bubble1}></div>
+    <div className={s.bubble2}></div>
+    <div className={s.bubble3}></div>
+    <div className={s.bubble4}></div>
+    <div className={s.bubble5}></div>
+    <div className={s.bubble6}></div>
+    <div className={s.bubble7}></div>
+    <div className={s.bubble8}></div>
+    <PopupAdvantages/>
   </section>
 )
 

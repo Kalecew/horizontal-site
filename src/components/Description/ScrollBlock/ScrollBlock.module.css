@@ -1,0 +1,42 @@
+@value colors:  './../../../var.css';
+@value bg-white from colors;
+@value z-index:  './../../../var.css';
+@value description-sperm1-z-index from z-index;
+
+.scrollBlock {
+	height: 90rem;
+	display: flex;
+}
+.textBlock {
+	composes: block from "./../../../index.css";
+	font-size: 4.4rem;
+	width: 156rem;
+	height: 100%;
+	padding: 0 10rem 0 6rem;
+	overflow-y: scroll;
+	position: relative;
+	z-index: description-sperm1-z-index;
+	line-height: 1.35;
+	letter-spacing: .07rem;
+}
+.textBlock::before, .textBlock::after {
+	content: '';
+	display: block;
+	position: sticky;
+	left: 0;
+	right: 0;
+	height: 5rem;
+	background-color: bg-white;
+}
+.textBlock::before {
+	top: 0;
+}
+.textBlock::after {
+	bottom: 0;
+	box-shadow: 0 -4rem 1rem 2rem rgba(255, 255, 255, .5);
+}
+.textBlock p + p {
+	margin-top: 9rem;
+	line-height: 1.36em;
+	letter-spacing: .1rem;
+}
