@@ -14,7 +14,7 @@
 	left: 74rem;
 }
 [data-animation] .sperm1 {
-	animation: sperm 2s 1 ease-in-out;
+	animation: sperm_group1 2s 1 linear;
 }
 .sperm2 {
 	width: 146.1rem;
@@ -25,7 +25,7 @@
 	left: 118rem;
 }
 [data-animation] .sperm2 {
-	animation: sperm 2s 1 ease-in-out;
+	animation: sperm_group1 2s 1 linear;
 }
 .sperm3 {
 	width: 82.8rem;
@@ -36,7 +36,7 @@
     left: 143rem;
 }
 [data-animation] .sperm3 {
-	animation: sperm 3s 1 ease-in-out;
+	animation: sperm_group2 2s 1 linear;
 }
 .sperm4 {
 	width: 65.1rem;
@@ -47,7 +47,7 @@
     left: 178rem;
 }
 [data-animation] .sperm4 {
-	animation: sperm 4s 1 ease-in-out;
+	animation: sperm_group3 2s 1 linear;
 }
 .sperm5 {
 	width: 145.9rem;
@@ -58,11 +58,25 @@
     left: 178rem;
 }
 [data-animation] .sperm5 {
-	animation: sperm 3s 1 ease-in-out;
+	animation: sperm_group2 2s 1 linear;
 }
 
 
-@keyframes sperm{
-	from {opacity: 0;}
-	to 	 {opacity: 1;}
+@keyframes sperm_group1{
+	from {opacity: 0; 	transform: translate(16rem,8rem);}
+	33%  {opacity: .33; transform: translate(10rem,5rem);}
+	66%  {opacity: .66; transform: translate(4rem,2rem);}
+	to 	 {opacity: 1; 	transform: translate(0,0);}
+}
+@keyframes sperm_group2{
+	from {opacity: 0; 	transform: translate(16rem,8rem);}
+	33%  {opacity: 0; 	transform: translate(10rem,5rem);}
+	66%  {opacity: .5; 	transform: translate(4rem,2rem);}
+	to 	 {opacity: 1; 	transform: translate(0,0);}
+}
+@keyframes sperm_group3{
+	from {opacity: 0; transform: translate(16rem,8rem);}
+	33%  {opacity: 0; transform: translate(10rem,5rem);}
+	66%  {opacity: 0; transform: translate(4rem,2rem);}
+	to 	 {opacity: 1; transform: translate(0,0);}
 }

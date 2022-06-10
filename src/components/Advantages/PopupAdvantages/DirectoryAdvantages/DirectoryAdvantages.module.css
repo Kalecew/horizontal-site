@@ -1,0 +1,25 @@
+@value colors: './../../../../var.css';
+@value text-blue from colors;
+
+.directoryAdvantages {
+	font-size: 5rem;
+	margin: 4rem 0 0 0;
+}
+.list {
+	list-style: none;
+	height: 52rem;
+	overflow: hidden;
+}
+.item {
+
+}
+.item::before {
+  content: attr(counter);
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
+  color: text-blue;
+  display: block;
+}
+.item + .item {
+	margin-top: 4rem;
+}

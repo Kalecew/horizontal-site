@@ -8,6 +8,7 @@
 
 .cover {
 	padding: 30rem 0 0 14rem;
+	background: url('./bg.png') center no-repeat;
 }
 .title {
 	position: relative;

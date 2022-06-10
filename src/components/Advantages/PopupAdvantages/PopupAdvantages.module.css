@@ -1,0 +1,51 @@
+@value colors: './../../../var.css';
+@value popup-overlay-bg, border-dark from colors;
+
+.popupAdvantages {	
+	position: absolute;	
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;	
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: popup-overlay-bg;
+}
+.window {
+	composes: block from './../../../index.css';
+	padding: 7.5rem 27.5rem 7.5rem 33.5rem;
+	width: 157rem;
+	height: 115rem;
+	position: absolute;	
+    top: 24.5rem;
+    left: 37rem;	
+}
+.title {
+
+}
+.bigTitle {
+	composes: bigTitle from './../Advantages.module.css';
+}
+.closeBtn {
+	font-size: 0;
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	top: 5rem;
+	right: 5rem;
+}
+.closeBtn::before, .closeBtn::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: .3rem;
+	background-color: border-dark;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.closeBtn::before {transform: rotate(45deg);}
+.closeBtn::after {transform: rotate(-45deg);}

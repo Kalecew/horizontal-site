@@ -1,5 +1,5 @@
 @value colors:  './../../../var.css';
-@value bg-white from colors;
+@value bg-white, scrollbar-track-bg, scrollbar-thumb-bg from colors;
 @value z-index:  './../../../var.css';
 @value description-sperm1-z-index from z-index;
 
@@ -8,12 +8,14 @@
 	display: flex;
 }
 .textBlock {
+	flex: 0 1 auto;
 	composes: block from "./../../../index.css";
 	font-size: 4.4rem;
 	width: 156rem;
 	height: 100%;
 	padding: 0 10rem 0 6rem;
 	overflow-y: scroll;
+	touch-action: pan-y;
 	position: relative;
 	z-index: description-sperm1-z-index;
 	line-height: 1.35;

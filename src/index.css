@@ -1,4 +1,6 @@
 @import './fonts/DINPro/style.css';
+@import './fonts/Gilroy/style.css';
+@import './fonts/Circe/style.css';
 
 @value colors:  './var.css';
 @value text-dark, btn-bg, btn-text, bg-black, bg-white from colors;
@@ -8,6 +10,7 @@ html {
 }
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 *::-webkit-scrollbar {
@@ -26,7 +29,7 @@ section {
   height: 100vh;
   flex-shrink: 0;
 }
-h2 {
+h2, h3 {
   font-size: 5.4rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -40,22 +43,14 @@ a {
 button {
   font: inherit;
   border:  none;
+  background: none;
 }
 ul {
   list-style: none;
 }
 
-.visuallyHidden:not(:focus):not(:active) {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
+.hidden {
+  display: none;
 }
 
 .btn {

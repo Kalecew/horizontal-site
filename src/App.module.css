@@ -2,6 +2,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-behavior: smooth;
+  touch-action: none;
 }
 .content {
   width: fit-content;
