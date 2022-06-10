@@ -9,5 +9,6 @@
   height: 100vh;
   display: flex;
   background: url('./bg.jpg') center no-repeat;
+  background-size: cover;
   position: relative;
 }

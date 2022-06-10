@@ -8,6 +8,11 @@
 html {
   font-size: 10px;
 }
+@media (max-width: 1024px) {
+  html {
+    font-size: 5px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -63,8 +68,10 @@ ul {
   line-height: 1.1;
   padding: .55em .7em;
   text-transform: none;
+  position: relative;
 }
 .btn::before {
+  content: '';
   width: 1.85em;
   height: 1.85em;
   background: bg-black;
@@ -73,6 +80,13 @@ ul {
   line-height: 1.6em;
   box-shadow: -.04em -.04em .1em .06em rgba(0,0,0,.38), .04em .04em .1em .06em rgba(255,255,255,.5);
   letter-spacing: normal;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 8.5rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .btn__text {
   margin: 0 .6em;

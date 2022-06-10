@@ -29,8 +29,11 @@
 	bottom: 3rem;
 	right: 21rem;
 }
-.btn::before {
-	content: url('./arrow.png');
+.btn::after {
+	background: url('./arrow.png') center no-repeat;
+	background-size: cover;
+	width: 3.9rem;
+	height: 2.8rem;
 }
 .pinkSperm {
 	width: 118.3rem;

@@ -24,6 +24,7 @@
 	width: 4.5rem;
 	height: 3.9rem;
 	background: url('./home.png') center no-repeat;
+	background-size: cover;
 }
 .nav::after {
 	content: '';
