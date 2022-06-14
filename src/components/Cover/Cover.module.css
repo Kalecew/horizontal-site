@@ -7,8 +7,8 @@
 @value cover-title-z-index, cover-sperm-z-index, cover-ovule2-z-index from z-index;
 
 .cover {
-	padding: 30rem 0 0 14rem;
-	background: url('./bg.png') center no-repeat;
+	padding: 0 0 12rem 14rem;
+	background: url('./bg.png') left center no-repeat;
 }
 .title {
 	position: relative;
@@ -25,9 +25,8 @@
 }
 .btn {
 	composes: btn from "./../../index.css";
-	position: absolute;
-	bottom: 3rem;
-	right: 21rem;
+	display: inline-flex;
+    transform: translate(7.9rem, -2.7rem);
 }
 .btn::after {
 	background: url('./arrow.png') center no-repeat;

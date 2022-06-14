@@ -8,7 +8,7 @@
 	display: flex;
 }
 .textBlock {
-	flex: 0 1 auto;
+	flex: 1 1 auto;
 	composes: block from "./../../../index.css";
 	font-size: 4.4rem;
 	width: 156rem;

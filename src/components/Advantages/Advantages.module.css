@@ -5,7 +5,7 @@
 @value advantages-bottle-z-index,	 advantages-bubble1-z-index,	 advantages-bubble2-z-index,	 advantages-bubble3-z-index,	 advantages-bubble4-z-index,	 advantages-bubble5-z-index,	 advantages-bubble6-z-index,	 advantages-bubble7-z-index,	 advantages-bubble8-z-index from z-index;
 
 .advantages {
-	padding: 32rem 0 0 70.6rem;
+	padding: 6rem 0 0 70.6rem;
 	position: relative;
 }
 .title {
