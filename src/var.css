@@ -36,3 +36,17 @@
 @value advantages-bubble6-z-index: 3;
 @value advantages-bubble7-z-index: 1;
 @value advantages-bubble8-z-index: 3;
+
+
+
+@value xxxxl: 2047px;
+@value xxxl:  1860px;
+@value xxl:   1640px;
+@value xl:    1440px;
+@value l:     1240px;
+@value m:     1023px;
+@value s:     830px;
+@value xs:    620px;
+@value xxs:   520px;
+@value xxxs:  426px;
+

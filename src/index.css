@@ -4,56 +4,59 @@
 
 @value colors:  './var.css';
 @value text-dark, btn-bg, btn-text, bg-black, bg-white from colors;
+@value size:  './var.css';
+@value xxxxl, xxxl, xxl, xl, l, m, s, xs, xxs, xxxs from size;
+
 
 html {
   font-size: 10px;
 }
-@media (max-width: 2047px) {
+@media (max-width: xxxxl) {
   html {
     font-size: 9px;
   }
 }
-@media (max-width: 1860px) {
+@media (max-width: xxxl) {
   html {
     font-size: 8px;
   }
 }
-@media (max-width: 1640px) {
+@media (max-width: xxl) {
   html {
     font-size: 7px;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: xl) {
   html {
     font-size: 6px;
   }
 }
-@media (max-width: 1240px) {
+@media (max-width: l) {
   html {
     font-size: 5px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: m) {
   html {
     font-size: 4px;
   }
 }
-@media (max-width: 830px) {
+@media (max-width: s) {
   html {
     font-size: 3px;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: xs) {
   html {
     font-size: 2.5px;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: xxs) {
   html {
     font-size: 2px;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: xxxs) {
   html {
     font-size: 1.5px;
   }
@@ -118,6 +121,12 @@ ul {
   text-transform: none;
   position: relative;
   font-family: 'DIN Pro';
+  width: fit-content;
+}
+@media (max-width: xxs) {
+  .btn {
+    font-size: 15rem;
+  }
 }
 .btn::before {
   content: '';
@@ -136,6 +145,11 @@ ul {
   left: 8.5rem;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: xxs) {
+  .btn::after {
+    left: 24.5rem;
+  }
 }
 .btn__text {
   margin: 0 .6em;

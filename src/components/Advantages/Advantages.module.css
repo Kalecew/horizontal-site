@@ -1,11 +1,14 @@
-
 @value colors:  './../../var.css';
 @value bg-white from colors;
+
 @value z-index:  './../../var.css';
 @value advantages-bottle-z-index,	 advantages-bubble1-z-index,	 advantages-bubble2-z-index,	 advantages-bubble3-z-index,	 advantages-bubble4-z-index,	 advantages-bubble5-z-index,	 advantages-bubble6-z-index,	 advantages-bubble7-z-index,	 advantages-bubble8-z-index from z-index;
 
+@value size:  './../../var.css';
+@value xs, xxs, xxxs from size;
+
 .advantages {
-	padding: 6rem 0 0 70.6rem;
+	padding: 6rem 16rem 0 70.6rem;
 	position: relative;
 }
 .title {
@@ -19,17 +22,29 @@
 	letter-spacing: 2.3rem;
 }
 .gridContent {
-	margin: 13rem 0 0 -8.5rem;
+	margin: 13rem 0 0 -20rem;
 	display: grid;
 	grid-template-areas: "long short" 
-	"long btn";
+											 "long btn";
 	grid-gap: 7rem;
 	width: fit-content;
+}
+@media (max-width: xxs) {
+	.gridContent {
+		grid-template-areas: "long"
+												 "short" 
+											   "btn";
+		grid-gap: 10rem;
+	}
 }
 .longAdvantage, .shortAdvantage {
 	composes: block from './../../index.css';
 	font-size: 5rem;
-	padding: 9.5rem 9.5rem 7rem;
+}
+@media (max-width: xxs) {
+	.longAdvantage, .shortAdvantage {
+		font-size: 9rem;
+	}
 }
 .longAdvantage p, .shortAdvantage p {
 	overflow: hidden;
@@ -38,14 +53,17 @@
 .longAdvantage::before, .shortAdvantage::before {
 	position: absolute;
 	top: 0;
-	left:  8.5rem;
 	transform: translateY(-50%);
 }
 .longAdvantage {
 	grid-area: long;
-	width: 67rem;
-	height: 53rem;
 	position: relative;
+	padding: 9.5rem 9.5rem 7rem 21rem;
+}
+@media (max-width: xxs) {
+	.longAdvantage {
+		height: 64rem;
+	}
 }
 .longAdvantage::before {
 	content: '';
@@ -53,22 +71,23 @@
 	background-size: cover;
 	width: 13.5rem;
 	height: 12.6rem;
+	left:  20rem;
 }
-.longAdvantage::after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -8.5rem;
-	width: 17rem;
-	height: 100%;
-	background-color: bg-white;
+@media (max-width: xxs) {
+	.longAdvantage::before {
+		width: 20rem;
+    height: 18rem;
+	}
 }
 .shortAdvantage {
 	grid-area: short;
-	width: 53rem;
-	height: 30rem;
 	position: relative;
+	padding: 9.5rem 9.5rem 7rem;
+}
+@media (max-width: xxs) {
+	.shortAdvantage {
+		padding: 9.5rem 9.5rem 7rem 21rem;
+	}
 }
 .shortAdvantage::before {
 	content: '';
@@ -76,6 +95,14 @@
 	background-size: cover;
 	width: 14rem;
 	height: 11.5rem;
+	left:  8.5rem;
+}
+@media (max-width: xxs) {
+	.shortAdvantage::before {
+		left:  20rem;
+		width: 21rem;
+    height: 16rem;
+	}
 }
 .btn {
 	composes: btn from './../../index.css';
@@ -88,6 +115,17 @@
 	background-size: cover;
 	width: 2.6rem;
 	height: 2.6rem;
+}
+@media (max-width: xxs) {
+	.btn {
+		margin: 0 auto;
+	}
+}
+@media (max-width: xxs) {
+	.btn::after {
+		width: 8.6rem;
+		height: 8.6rem;
+	}
 }
 .bottle {
 	width: 46.6rem;

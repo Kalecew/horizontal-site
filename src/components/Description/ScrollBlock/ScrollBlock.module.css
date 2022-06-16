@@ -1,10 +1,14 @@
 @value colors:  './../../../var.css';
 @value bg-white, scrollbar-track-bg, scrollbar-thumb-bg from colors;
+
 @value z-index:  './../../../var.css';
 @value description-sperm1-z-index from z-index;
 
+@value size:  './../../../var.css';
+@value m, xxs from size;
+
 .scrollBlock {
-	height: 90rem;
+	max-height: 59vh;
 	display: flex;
 }
 .textBlock {
@@ -20,6 +24,16 @@
 	z-index: description-sperm1-z-index;
 	line-height: 1.35;
 	letter-spacing: .07rem;
+}
+@media (max-width: m) {
+	.textBlock {
+		font-size: 6rem;
+	}
+}
+@media (max-width: xxs) {
+	.textBlock {
+		font-size: 9rem;
+	}
 }
 .textBlock::before, .textBlock::after {
 	content: '';
