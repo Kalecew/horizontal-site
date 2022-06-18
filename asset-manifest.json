@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/horizontal-site/static/css/main.6f18ce58.css",
-    "main.js": "/horizontal-site/static/js/main.f5d29b7b.js",
+    "main.css": "/horizontal-site/static/css/main.805ea263.css",
+    "main.js": "/horizontal-site/static/js/main.b4b2d5c0.js",
     "static/media/bg.jpg": "/horizontal-site/static/media/bg.ab6a60c44f0d2bc0680b.jpg",
     "static/media/bottle.png": "/horizontal-site/static/media/bottle.9b42f3ea90bed8210f71.png",
     "static/media/Circe-Regular.ttf": "/horizontal-site/static/media/Circe-Regular.f80cf2f1a50fc5107f4c.ttf",
@@ -39,11 +39,11 @@
     "static/media/bubble_2.png": "/horizontal-site/static/media/bubble_2.76c5e56938a13f589345.png",
     "static/media/bubble_7.png": "/horizontal-site/static/media/bubble_7.2aea94dc917c6316922e.png",
     "index.html": "/horizontal-site/index.html",
-    "main.6f18ce58.css.map": "/horizontal-site/static/css/main.6f18ce58.css.map",
-    "main.f5d29b7b.js.map": "/horizontal-site/static/js/main.f5d29b7b.js.map"
+    "main.805ea263.css.map": "/horizontal-site/static/css/main.805ea263.css.map",
+    "main.b4b2d5c0.js.map": "/horizontal-site/static/js/main.b4b2d5c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f18ce58.css",
-    "static/js/main.f5d29b7b.js"
+    "static/css/main.805ea263.css",
+    "static/js/main.b4b2d5c0.js"
   ]
 }
