@@ -8,7 +8,7 @@
 @value xs, xxs, xxxs from size;
 
 .advantages {
-	padding: 6rem 16rem 0 70.6rem;
+	padding: 9rem 16rem 0 70.6rem;
 	position: relative;
 }
 .title {
@@ -22,47 +22,29 @@
 	letter-spacing: 2.3rem;
 }
 .gridContent {
-	margin: 13rem 0 0 -20rem;
+	margin: 13rem 0 0 -19rem;
 	display: grid;
 	grid-template-areas: "long short" 
 											 "long btn";
 	grid-gap: 7rem;
-	width: fit-content;
+	width: 138rem;
 }
 @media (max-width: xxs) {
 	.gridContent {
 		grid-template-areas: "long"
 												 "short" 
 											   "btn";
-		grid-gap: 10rem;
+		grid-gap: 12rem;
 	}
-}
-.longAdvantage, .shortAdvantage {
-	composes: block from './../../index.css';
-	font-size: 5rem;
-}
-@media (max-width: xxs) {
-	.longAdvantage, .shortAdvantage {
-		font-size: 9rem;
-	}
-}
-.longAdvantage p, .shortAdvantage p {
-	overflow: hidden;
-	height: 100%;
-}
-.longAdvantage::before, .shortAdvantage::before {
-	position: absolute;
-	top: 0;
-	transform: translateY(-50%);
 }
 .longAdvantage {
 	grid-area: long;
 	position: relative;
-	padding: 9.5rem 9.5rem 7rem 21rem;
+	padding: 9.5rem 8.5rem 7rem 20rem;
 }
 @media (max-width: xxs) {
 	.longAdvantage {
-		height: 64rem;
+		height: 70rem;
 	}
 }
 .longAdvantage::before {
@@ -82,12 +64,7 @@
 .shortAdvantage {
 	grid-area: short;
 	position: relative;
-	padding: 9.5rem 9.5rem 7rem;
-}
-@media (max-width: xxs) {
-	.shortAdvantage {
-		padding: 9.5rem 9.5rem 7rem 21rem;
-	}
+	padding: 9.5rem 9.5rem 9rem 9rem;
 }
 .shortAdvantage::before {
 	content: '';
@@ -103,6 +80,25 @@
 		width: 21rem;
     height: 16rem;
 	}
+}
+.longAdvantage, .shortAdvantage {
+	composes: block from './../../index.css';
+	font-size: 5rem;
+}
+@media (max-width: xxs) {
+	.longAdvantage, .shortAdvantage {
+		font-size: 9rem;
+		padding: 13rem 9.5rem 10rem 21rem;
+	}
+}
+.longAdvantage p, .shortAdvantage p {
+	overflow: hidden;
+	height: 100%;
+}
+.longAdvantage::before, .shortAdvantage::before {
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
 }
 .btn {
 	composes: btn from './../../index.css';
@@ -143,7 +139,7 @@
 	background: url('./bubble_1.png') center no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 13rem;
+	bottom: 133rem;
 	left: 40rem;
 	z-index: advantages-bubble1-z-index;
 	animation: bubble1 15s infinite linear;
@@ -154,7 +150,7 @@
 	background: url('./bubble_2.png') center no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 31rem;
+	bottom: 109rem;
 	left: 38rem;
 	z-index: advantages-bubble2-z-index;
 	animation: bubble2 5s infinite linear;
@@ -165,7 +161,7 @@
 	background: url('./bubble_3.png') center no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 42rem;
+	bottom: 104rem;
 	left: 16rem;
 	z-index: advantages-bubble3-z-index;
 	animation: bubble3 5s infinite linear;
@@ -176,7 +172,7 @@
 	background: url('./bubble_4.png') center no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 63rem;
+	bottom: 68rem;
 	left: 38rem;
 	z-index: advantages-bubble4-z-index;
 	animation: bubble4 10s infinite linear;
@@ -187,7 +183,7 @@
 	background: url('./bubble_5.png') center no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 91rem;
+	bottom: 56rem;
 	left: 3rem;
 	z-index: advantages-bubble5-z-index;
 	animation: bubble5 10s infinite linear;
@@ -198,7 +194,7 @@
 	background: url('./bubble_6.png') center no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 111rem;
+	bottom: 28rem;
 	left: 6rem;
 	z-index: advantages-bubble6-z-index;
 	animation: bubble6 10s infinite linear;
@@ -209,7 +205,7 @@
 	background: url('./bubble_7.png') center no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 118rem;
+	bottom: 22rem;
 	left: 49rem;
 	z-index: advantages-bubble7-z-index;
 	animation: bubble7 10s infinite linear;

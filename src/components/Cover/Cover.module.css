@@ -30,6 +30,7 @@
 	font-weight: 300;
 	letter-spacing: 1.2rem;
 	color: text-black;
+	position: relative;
 }
 .btn {
 	composes: btn from "./../../index.css";
@@ -58,8 +59,8 @@
 	height: 18.5rem;
 	position: absolute;
 	z-index: cover-sperm-z-index;
-	top: 30rem;
-    left: 87rem;
+	top: -9rem;
+    left: 76rem;
 	background: url('./pink_sperm.png') center no-repeat;
 	background-size: cover;
 }

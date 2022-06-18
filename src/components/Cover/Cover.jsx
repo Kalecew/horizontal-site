@@ -9,9 +9,9 @@ const Cover = () => (
         <a className={s.btn} href="#desc">
           <span className="btn__text">Что дальше?</span>
         </a>
+        <div className={s.pinkSperm}></div>
       </div>      
-    </h2>
-    <div className={s.pinkSperm}></div>
+    </h2>    
     <div className={s.ovule1}></div>
     <div className={s.ovule2}></div>
     <div className={s.ovule3}></div>

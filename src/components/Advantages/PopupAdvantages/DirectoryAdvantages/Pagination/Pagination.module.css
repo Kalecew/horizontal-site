@@ -1,24 +1,43 @@
 @value colors:  './../../../../../var.css';
 @value pagination-circle-active-bg, pagination-circle-active-border, pagination-circle-bg, pagination-circle-border, pagination-arrow-bg from colors;
 
+@value size: './../../../../../var.css';
+@value xxs from size;
+
 .pagination {
 	margin-top: 10.5rem;
+}
+@media (max-width: xxs) {
+	.pagination {
+		margin-top: 5rem;
+	}
 }
 .list {
 	display: flex;
 	align-items: center;
 }
 .item {
-	    padding: 1.35rem;
+	padding: 1.35rem;
+}
+@media (max-width: xxs) {
+	.item {
+		padding: 3rem;
+	}
 }
 .link {
 	display: block;	
 	line-height: 1.1;
 	font-size: 0;
-}
-.linkPrev, .linkNext {
 	width: 2rem;
 	height: 2rem;
+}
+@media (max-width: xxs) {
+	.link {
+		width: 4rem;
+		height: 4rem;
+	}
+}
+.linkPrev, .linkNext {	
 	border-top: .2rem solid pagination-arrow-bg;
 	border-left: .2rem solid pagination-arrow-bg;
 }
@@ -28,14 +47,12 @@
 .linkNext {
 	transform: rotate(135deg);
 }
-.linkCircle {	
-	width: 2rem;
-	height: 2rem;
+.linkCircle {		
 	border-radius: 50%;
 	background-color: pagination-circle-bg;
-	border: 2px solid pagination-circle-border;
+	border: .2rem solid pagination-circle-border;
 }
 .linkCircleActive {	
 	background-color: pagination-circle-active-bg;
-	border: 2px solid pagination-circle-active-border;
+	border: .2rem solid pagination-circle-active-border;
 }

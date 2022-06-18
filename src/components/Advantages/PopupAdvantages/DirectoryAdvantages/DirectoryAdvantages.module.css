@@ -1,14 +1,26 @@
 @value colors: './../../../../var.css';
 @value text-blue from colors;
 
+@value size: './../../../../var.css';
+@value xxs from size;
+
 .directoryAdvantages {
 	font-size: 5rem;
 	margin: 4rem 0 0 0;
 }
+@media (max-width: xxs) {
+	.directoryAdvantages {
+		font-size: 7rem;
+	}
+}
 .list {
-	list-style: none;
 	height: 52rem;
 	overflow: hidden;
+}
+@media (max-width: xxs) {
+	.list {
+		height: 90rem;
+	}
 }
 .item {
 

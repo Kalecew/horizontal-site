@@ -17,13 +17,12 @@
 	background-color: popup-overlay-bg;
 	display: flex;
 	align-items: center;
-	padding: 10rem 16rem 0 37.1rem;
+	padding: 10.5rem 16rem 0 37.1rem;
 }
 @media (max-width: xxs) {
 	.overlay {
-		padding: 10rem 16rem 116rem 37.1rem;
+		padding: 36rem 16rem 116rem 37.1rem;
 	}
-
 }
 .window {
 	composes: block from './../../../index.css';
@@ -31,6 +30,11 @@
 	width: 157rem;
 	height: 115rem;
 	position: relative;
+}
+@media (max-width: xxs) {
+	.window {
+		height: 157rem;
+	}
 }
 .title {
 
